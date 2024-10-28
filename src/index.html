@@ -1,29 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Generador de Excusas</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/AK/eZv4X9q1c8kfvYna7smfnO7hxHs3bWaq5c4"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
+      <h1 class="mt-5">¡Buenos días estrellitas, la tierra les dice Hola!</h1>
+      <img
+        id="excuse-image"
+        src="https://intn24.lalr.co/old/willy_wonka_warner.jpg"
+        alt="Excusa Image"
+        class="img-fluid rounded mt-3"
+        style="width: 250px; height: 250px; object-fit: cover;"
+      />
       <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
+        Proyecto excusas realizado por LYNDA
       </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+
+      <div class="excuse-box alert alert-primary mt-4">
+        <p id="excuse"></p>
       </div>
-    </div>
-  </body>
-</html>
+
+      <button id="generate-btn" class="btn btn-success mt-4">
+        Generar Nueva Excusa
+      </button>
+
+      <div class="text-center p-3 bg-light">
+        Hecho con 🤘 por Lynda
+        <a href="https://www.4geeksacademy.com" class="text-decoration-none">4Geeks Academy</a>
+      </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybU5ltcRxaMLjAoJz2nKZlJ/WclpYEdxJw49K3sv5TIWNK0p4" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-QFJWv7XedpaDIOXiyf3jx0u7zyhqz5v5Dq0OBTXixzxAjrHoCETBdeu/9y8Y6pIZ" crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+    </body>
+    </html>
